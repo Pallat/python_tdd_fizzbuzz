@@ -1,6 +1,6 @@
 class FizzBuzz:
 	def count(self,number):
-		if number == 15:
+		if number%15 == 0:
 			return "fizzbuzz"
 		if number%3 == 0:
 			return "fizz"
