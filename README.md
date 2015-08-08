@@ -1,7 +1,6 @@
-use virtualenv, virtualenv-wrapper
-
-mkvirtualenv yod
-workon yod
+reccomend: virtualenv/virtualenv-wrapper
+			mkvirtualenv yod
+			workon yod
 
 pip freeze // to check lib
 pip install nose // test suite
