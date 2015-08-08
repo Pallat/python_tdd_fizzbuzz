@@ -2,8 +2,9 @@ import unittest
 from fizzbuzz import FizzBuzz
 
 class FizzBuzzTest(unittest.TestCase):
+	def setUp(self):
+		self.fizzbuzz = FizzBuzz()
+
 	def test_it_should_be_default_value(self):
-		fizzbuzz = FizzBuzz()
-		self.assertEqual("1",fizzbuzz.count(1))
-		fizzbuzz = FizzBuzz()
-		self.assertEqual("2",fizzbuzz.count(2))
+		self.assertEqual("1",self.fizzbuzz.count(1))
+		self.assertEqual("2",self.fizzbuzz.count(2))
