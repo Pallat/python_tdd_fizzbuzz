@@ -1,9 +1,12 @@
 class FizzBuzz:
 	def count(self,number):
-		if number%15 == 0:
+		isModulo3 = number%3 == 0
+		isModulo5 = number%5 == 0
+
+		if isModulo3 and isModulo5:
 			return "fizzbuzz"
-		if number%3 == 0:
+		if isModulo3:
 			return "fizz"
-		if number%5 == 0:
+		if isModulo5:
 			return "buzz"
 		return str(number)
